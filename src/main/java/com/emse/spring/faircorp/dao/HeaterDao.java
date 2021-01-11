@@ -1,5 +1,6 @@
 package com.emse.spring.faircorp.dao;
 
+
 import com.emse.spring.faircorp.model.Heater;
 import org.springframework.data.jpa.repository.JpaRepository;
 
