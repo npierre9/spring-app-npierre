@@ -1,9 +1,10 @@
 package com.emse.spring.faircorp.model;
 
 import java.util.Set;
+import javax.persistence.*;
 
 @Entity
-@Table(name=Room)
+@Table(name="ROOM")
 public class Room {
 
     @Id

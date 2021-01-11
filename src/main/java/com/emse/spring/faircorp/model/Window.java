@@ -1,4 +1,5 @@
 package com.emse.spring.faircorp.model;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,10 +12,10 @@ public class Window {
     @Column(nullable=false, length=255)
     private String name;
 
-    @ManyToOne(nullable=false)
+    @ManyToOne()
     private Room room;
 
-    @Enumerated(EnumType.STRING, nullable=false)
+    @Enumerated(EnumType.STRING)
     private WindowStatus windowStatus;
 
     public Window() {

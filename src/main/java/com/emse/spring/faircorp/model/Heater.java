@@ -1,7 +1,9 @@
 package com.emse.spring.faircorp.model;
 
+import javax.persistence.*;
+
 @Entity
-@Table(name=HEATER)
+@Table(name="HEATER")
 public class Heater {
     @Id
     @GeneratedValue
@@ -13,10 +15,10 @@ public class Heater {
     @Column(nullable=true)
     private Long power;
 
-    @ManyToOne(nullable=false)
+    @ManyToOne()
     private Room room;
 
-    @Enumerated(EnumType.STRING, nullable=false)
+    @Enumerated(EnumType.STRING)
     private HeaterStatus heaterStatus;
 
     public Heater() {
